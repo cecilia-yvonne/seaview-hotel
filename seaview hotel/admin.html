@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEAVIEW HOTEL</title>
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SEAVIEW HOTEL - Admin</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="report.html">Reports</a>
+  </nav>
+</header>
+
+<div class="auth-container">
+  <div class="auth-card">
+    <h2>Admin Login</h2>
+
+    <label>Admin Username</label>
+    <input type="text" id="adminUser">
+
+    <label>Password</label>
+    <input type="password" id="adminPass">
+
+    <button onclick="adminLogin()">Login</button>
+  </div>
+</div>
+
+
+<ul id="bookingList"></ul>
+
+<script src="script.js"></script>
+<script>
+  loadBookings();
+</script>
+
+</body>
+</html>

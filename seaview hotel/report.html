@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Reports</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Booking Reports</h2>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="admin.html">Admin</a>
+    <a href="food.html">Food</a>
+    <a href="rooms.html">Room</a>
+  </nav>
+</header>
+
+<section class="report-container">
+
+  <h2 class="report-title">Room Booking Records</h2>
+
+  <div class="report-card">
+    <table>
+      <thead>
+        <tr>
+          <th>Room Type</th>
+          <th>Check-in</th>
+          <th>Check-out</th>
+          <th>Nights</th>
+          <th>Total Cost ($)</th>
+        </tr>
+      </thead>
+      <tbody id="bookingReport">
+        <!-- Data inserted by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+
+ <!-- FOOD ORDERS -->
+  <h2 class="report-title">Food Orders</h2>
+
+  <div class="report-card">
+    <table>
+      <thead>
+        <tr>
+          <th>Food Item</th>
+          <th>Quantity</th>
+          <th>Price ($)</th>
+          <th>Total ($)</th>
+        </tr>
+      </thead>
+      <tbody id="foodReport">
+        <!-- Filled by JS -->
+      </tbody>
+    </table>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+<script>
+  loadFoodReports();
+</script>
+
+<h2>Room Bookings</h2>
+<ul id="roomReports"></ul>
+
+<script>
+  loadRoomReports();
+</script>
+
+
+</body>
+</html>
